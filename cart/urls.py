@@ -11,6 +11,4 @@ router.register(r'', CartViewSet, basename='cart')
 router.register(r'my_cart', ProductCartViewSet, basename='my-cart')
 
 
-urlpatterns = [
-
-    ] + router.urls
+urlpatterns = router.urls
