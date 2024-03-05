@@ -7,7 +7,7 @@ app_name = CartConfig.name
 
 router = routers.DefaultRouter()
 
-router.register(r'cart', CartViewSet, basename='cart')
+router.register(r'', CartViewSet, basename='cart')
 router.register(r'my_cart', ProductCartViewSet, basename='my-cart')
 
 

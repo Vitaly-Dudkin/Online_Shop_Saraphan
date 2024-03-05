@@ -37,9 +37,9 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('users/', include('users.urls', namespace='users')),
-    path('', include('category.urls', namespace='category')),
-    path('', include('product.urls', namespace='product')),
-    path('', include('cart.urls', namespace='cart')),
+    path('category/', include('category.urls', namespace='category')),
+    path('product', include('product.urls', namespace='product')),
+    path('cart', include('cart.urls', namespace='cart')),
 
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),

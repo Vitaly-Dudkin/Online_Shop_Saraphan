@@ -7,7 +7,7 @@ app_name = ProductConfig.name
 
 router = routers.DefaultRouter()
 
-router.register(r'product', ProductViewSet, basename='pro')
+router.register(r'', ProductViewSet, basename='pro')
 
 urlpatterns = [
 

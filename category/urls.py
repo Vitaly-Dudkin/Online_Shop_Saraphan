@@ -9,6 +9,4 @@ router = routers.DefaultRouter()
 
 router.register(r'category', CategoryViewSet, basename='category')
 
-urlpatterns = [
-
-    ] + router.urls
+urlpatterns = router.urls
