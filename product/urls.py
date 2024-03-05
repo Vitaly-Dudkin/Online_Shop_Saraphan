@@ -9,6 +9,4 @@ router = routers.DefaultRouter()
 
 router.register(r'', ProductViewSet, basename='pro')
 
-urlpatterns = [
-
-    ] + router.urls
+urlpatterns = router.urls
